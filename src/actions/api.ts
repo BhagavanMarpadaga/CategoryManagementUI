@@ -20,7 +20,7 @@ class ApiClient {
     pathparam?: string
   ): Promise<unknown> => {
     try {
-        let baseUrl = "https://thriving-duckanoo-f828f2.netlify.app/.netlify/functions/app/api/v1/category";
+        let baseUrl = "https://categorylambda.netlify.app/.netlify/functions/app/api/v1/category";
       // let baseUrl =
       //   "http://localhost:9999/.netlify/functions/app/api/v1/category";
 
