@@ -32,7 +32,7 @@ const Child = (props:{data:CategoryType}) => {
 
       {/* Render children */}
       {isOpen && data.children.length > 0 && (
-        <ul className="ml-6 border-l border-gray-200 pl-3">
+        <ul className="ml-6 border-l border-gray-200 pl-3 list-none">
           {data.children.map((childData: any, index: number) => (
             <Child key={index} data={childData} />
           ))}

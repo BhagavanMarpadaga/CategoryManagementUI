@@ -20,7 +20,7 @@ class ApiClient {
     pathparam?: string
   ): Promise<unknown> => {
     try {
-        let baseUrl = "https://categorylambda.netlify.app/.netlify/functions/app/api/v1/category";
+      let baseUrl = "https://categorylambda.netlify.app/.netlify/functions/app/api/v1/category";
       // let baseUrl =
       //   "http://localhost:9999/.netlify/functions/app/api/v1/category";
 
@@ -48,7 +48,6 @@ class ApiClient {
       };
 
       const response: AxiosResponse = await axios(options);
-
 
       if (response.status === 200) {
         return response.data.data;
